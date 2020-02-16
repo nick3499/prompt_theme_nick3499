@@ -99,3 +99,7 @@ Finally, the `_prompt` is printed:
 ```python
 print(_prompt)
 ```
+
+## Future Plans
+
+Considering how the constantly changing prompt themes may become annoying, I have considered reducing the total number of themes to thirty-one, and using the `datetime` module to feature one theme per day. Another option would be to increase the total number of themes to 62, and feature one theme per day for two months.
