@@ -11,6 +11,12 @@ Methods used:
 
 This repo has been made available under the [MIT](https://opensource.org/licenses/MIT) open source license.
 
+The `.prompt_theme.py` Python3 script was tested with:
+
+- Linux kernel 5.4.0-14-generic
+- Ubuntu 20.04 (Focal Fossa) (development branch)
+- Python 3.8.2rc1 (Feb 12 2020)
+
 ## .bashrc
 
 Append the following lines to your Bash run commands file:
