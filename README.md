@@ -16,6 +16,7 @@ The `.prompt_theme.py` Python3 script was tested with:
 - Linux kernel 5.4.0-14-generic
 - Ubuntu 20.04 (Focal Fossa) (development branch)
 - Python 3.8.2rc1 (Feb 12 2020)
+- GNU Bash 5.0.11(1)-release (x86_64-pc-linux-gnu)
 
 ## .bashrc
 
