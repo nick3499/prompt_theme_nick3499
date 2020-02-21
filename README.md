@@ -51,19 +51,34 @@ Those exports can also be found in the `.prompt_theme.sh` dot file.
 
 ## prompt_theme()
 
-`prompt_theme()` method opens `colors.csv` and `themes.csv`. Then creates CSV readers with them, which are iterated through to generate both `RGB_COLORS` and `RGB_THEMES` dictionaries.
+`prompt_theme()` method opens `colors.csv` and `themes.csv` databases. Then creates CSV readers with them, which are iterated through to generate both `RGB_COLORS` and `RGB_THEMES` dictionaries. See above.
 
-## rand_num
+## datetime object
 
-`rand_num = choice(list(RGB_THEMES.keys()))` provides a pseudo-random number for theme choice&mdash;a random theme based on enumerated values which prefix the theme records.
+`dt = datetime.today()` assigns a `datetime` object which will be used to get current month and day.
 
-## rand_theme
+## _month
 
-`rand_theme = RGB_THEMES[rand_num]` assigns the three-color list of names to `rand_theme`.
+`_month = dt.month` assigns the current month number value.
+
+## _day
+
+`_day = dt.day` assigns the current day number value.
+
+## Even/Odd Month
+
+```python
+if (_month % 2) == 0:
+    _theme = RGB_THEMES[_day + 31]  # theme for even month
+else:
+    _theme = RGB_THEMES[_day]  # theme for odd month
+```
 
 ## _user, _host, _dir
 
-`_user = environ['USER']`, `_host = gethostname()` and `_dir = getcwd()` get the **username**, **hostname** and **working directory**.
+- `_user = environ['USER']` uses the `os.environ()` method to assign current user, which will be used to add current user to the prompt.
+- `_host = gethostname()` uses the `socket.gethostname()` method to assign current host, which will be used to add current host to the prompt.
+- `_dir = getcwd()` uses the `os.getcwd()` method to assign current working directory, which will be used to add current working directory to prompt.
 
 ## _prompt
 
