@@ -1,5 +1,5 @@
 # prompt_theme_nick3499
-Random Bash prompt bg color themes:
+Print different Bash background color theme per day for two months straight.
 
 ![screen capture](screen_capture.png)
 
