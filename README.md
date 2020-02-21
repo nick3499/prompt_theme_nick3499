@@ -75,10 +75,10 @@ To keep the value of `_prompt` from extending too far beyond 79 characters, it w
 - reset to default text format
 
 ```python
-_prompt = f'\\[\\033[1;7m\\033[38;2;{RGB_COLORS[rand_theme[0]]}m\\]{_user}'
-_prompt += f'\\[\\033[38;2;{RGB_COLORS[rand_theme[1]]}m\\]@{_host}'
-_prompt += f'\\[\\033[38;2;{RGB_COLORS[rand_theme[2]]}m\\] {_dir} '
-_prompt += f'\\[\\033[0m\\]\\$ '  # reset format to default
+_prompt = f'\\[\\033[1;7m\\033[38;2;{RGB_COLORS[_theme[0]]}m\\]{_user}'
+_prompt += f'\\[\\033[38;2;{RGB_COLORS[_theme[1]]}m\\]@{_host}'
+_prompt += f'\\[\\033[38;2;{RGB_COLORS[_theme[2]]}m\\] {_dir} '
+_prompt += f'\\[\\033[0m\\]\\$ '
 ```
 
 ## print()
