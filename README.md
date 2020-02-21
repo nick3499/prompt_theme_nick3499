@@ -1,6 +1,8 @@
 # prompt_theme_nick3499
 Random Bash prompt bg color themes:
 
+![screen capture](screen_capture.png)
+
 Methods used:
 
 - random.choice()
@@ -87,6 +89,6 @@ Finally, the `_prompt` is printed:
 print(_prompt)
 ```
 
-## Future Plans
+## .print_themes.py
 
-Considering how the constantly changing prompt themes may become annoying, I have considered reducing the total number of themes to thirty-one, and using the `datetime` module to feature one theme per day. Another option would be to increase the total number of themes to 62, and feature one theme per day for two months.
+`.print_themes.py` displays examples of all of the color themes in the collection including color names which themes are comprised of. See screen capture above.
