@@ -15,12 +15,12 @@ RGB_THEMES = {}  # RGB themes dict
 def prompt_theme():
     '''`prompt_theme()` method generates random prompt theme.'''
     # CSV file
-    with open('/home/nick/.userpy/prompt_theme/colors.csv', 'r') as colors_file:
+    with open('/home/foo/scripts/prompt_theme/colors.csv', 'r') as colors_file:
         colors_reader = reader(colors_file)  # CSV reader
         for color in colors_reader:
             RGB_COLORS[color[0]] = color[1]  # generate RGB colors dict
     # CSV file
-    with open('/home/nick/.userpy/prompt_theme/themes.csv', 'r') as themes_file:
+    with open('/home/foo/scripts/prompt_theme/themes.csv', 'r') as themes_file:
         themes_reader = reader(themes_file)  # CSV reader
         for theme in enumerate(themes_reader, 1):
             RGB_THEMES[theme[0]] = theme[1]  # generate enumerated themes dict
