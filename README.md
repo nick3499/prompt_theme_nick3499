@@ -5,11 +5,11 @@ Print different Bash background color theme per day for two months straight.
 
 Methods used:
 
-- random.choice()
 - csv.reader()
 - socket.gethostname()
 - os.environ()
 - os.getcwd()
+- datetime.datetime.today()
 
 This repo has been made available under the [MIT](https://opensource.org/licenses/MIT) open source license.
 
