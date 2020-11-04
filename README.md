@@ -107,3 +107,5 @@ print(_prompt)
 ## .print_themes.py
 
 `.print_themes.py` displays examples of all of the color themes in the collection including color names which themes are comprised of. See screen capture above.
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R72LISM)
